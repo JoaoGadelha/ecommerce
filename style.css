@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'sitefont';
+    src: url(fonts/FontsFree-Net-masiva-black.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sitefont';
+}
+
+.divider {
+    width: 80%;
+    height: 3px;
+    background: rgb(202, 202, 202);
+    position: relative;
+    left: 10%;
+    margin-top: 20px;
+}
+
+#navbar {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#navbar h2 {
+    padding-left: 100px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#navbar ul {
+    display: flex;
+    justify-self: end;
+    padding-right: 100px;
+}
+
+#navbar ul li {
+    padding: 0 5px;
+    list-style-type: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+}
+
+#navbar ul li a i {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+#navbar ul li i:hover {
+    background-color: white;
+}
+
+#navbar ul li:nth-child(1) i:hover {
+    color: blue;
+}
+
+#navbar ul li:nth-child(2) i:hover {
+    color: red;
+}
+
+#navbar ul li:nth-child(3) i:hover {
+    color: blue;
+}
+
+#navbar ul li:nth-child(4) i:hover {
+    color: darkmagenta;
+}
+
+#navbar ul li:nth-child(5) i:hover {
+    color: red;
+}
+
+#banner {
+    height: 100vh;
+    background: url("img/banner/lady.jpg") no-repeat center center/cover;
+    background-position: 0 -300px;
+}
+
+#option {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#option a {
+    height: 100%;
+    width: 100%;
+}
+
+#option a .optionBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transform: translateZ(0);
+    /*Causes faster transitions for optionOuterBox*/
+}
+
+#option a .optionBox .optionOuterBox {
+    height: 100%;
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+#option div:nth-child(1) a .optionBox .optionOuterBox {
+    background: url(img/options/1.jpg) center center/cover no-repeat;
+}
+
+#option div:nth-child(2) a .optionBox .optionOuterBox {
+    background: url(img/options/2.jpg) center center/cover no-repeat;
+}
+
+#option div:nth-child(3) a .optionBox .optionOuterBox {
+    background: url(img/options/3.jpg) center center/cover no-repeat;
+}
+
+#option .optionBox .optionOuterBox:hover,
+#option .optionBox .optionInnerBox:hover~.optionOuterBox {
+    transform: scale(1.5);
+}
+
+#option .optionBox .optionOuterBox::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+#option .optionBox .optionInnerBox {
+    border: white solid 6px;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+#offer p,
+h2 {
+    text-align: center;
+}
+
+#offer .offerContainer {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#offer .offerContainer .offerUnit {
+    height: 300px;
+    overflow: hidden;
+}
+
+#offer .offerContainer .offerUnit .imgBox {
+    height: 70%;
+    overflow: hidden;
+}
+
+#offer .offerContainer .offerUnit .imgBox img {
+    width: 100%;
+}
+
+#offer .offerContainer .offerUnit:nth-child(1) .imgBox img {
+    position: relative;
+    top: -100px;
+}
+
+#offer .offerContainer .offerUnit:nth-child(2) .imgBox img {
+    position: relative;
+    top: -50px;
+}
+
+#offer .offerContainer .offerUnit:nth-child(5) .imgBox img {
+    position: relative;
+    top: -60px;
+}
+
+#offer .offerContainer .offerUnit a,
+p {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#offer .offerContainer .offerUnit a p {
+    margin-top: 20px;
+    margin-bottom: -20px;
+    color: rgb(253, 80, 0);
+}
+
+#tease {
+    background: black;
+    color: white;
+    font-size: 30px;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#tease>* {
+    margin: 0;
+}
+
+#tease span {
+    color: #F56F09;
+}
+
+#footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: #02246D;
+    color: white;
+    height: 200px;
+}
+
+#footer h2 {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+#footer .logoContainer ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer .logoContainer ul li {
+    margin-left: 10px;
+}
+
+#footer .logoContainer ul li a {
+    color: white;
+}
+
+#footer .footerMenu a {
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+#footer .footerMenu a:nth-child(1),
+a:nth-child(2) {
+    border-right: 1px white solid;
+}
