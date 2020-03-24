@@ -89,7 +89,17 @@ body {
 #banner {
     height: 100vh;
     background: url("img/banner/lady.jpg") no-repeat center center/cover;
-    background-position: 0 -300px;
+    background-position: 0 -200px;
+}
+
+#banner::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 #option {
@@ -187,12 +197,22 @@ h2 {
 
 #offer .offerContainer .offerUnit:nth-child(1) .imgBox img {
     position: relative;
-    top: -100px;
+    top: -80px;
 }
 
 #offer .offerContainer .offerUnit:nth-child(2) .imgBox img {
     position: relative;
-    top: -50px;
+    top: -20px;
+}
+
+#offer .offerContainer .offerUnit:nth-child(3) .imgBox img {
+    position: relative;
+    top: -140px;
+}
+
+#offer .offerContainer .offerUnit:nth-child(4) .imgBox img {
+    position: relative;
+    top: -70px;
 }
 
 #offer .offerContainer .offerUnit:nth-child(5) .imgBox img {
