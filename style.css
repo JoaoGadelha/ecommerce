@@ -103,11 +103,17 @@ body {
 }
 
 #option {
-    height: 100px;
+    height: 270px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
     padding: 20px;
+    margin: 0 70px;
+}
+
+#option h2 {
+    grid-column: span 3;
 }
 
 #option a {
@@ -130,15 +136,15 @@ body {
     transition: all ease 0.5s;
 }
 
-#option div:nth-child(1) a .optionBox .optionOuterBox {
+#option div:nth-child(2) a .optionBox .optionOuterBox {
     background: url(img/options/1.jpg) center center/cover no-repeat;
 }
 
-#option div:nth-child(2) a .optionBox .optionOuterBox {
+#option div:nth-child(3) a .optionBox .optionOuterBox {
     background: url(img/options/2.jpg) center center/cover no-repeat;
 }
 
-#option div:nth-child(3) a .optionBox .optionOuterBox {
+#option div:nth-child(4) a .optionBox .optionOuterBox {
     background: url(img/options/3.jpg) center center/cover no-repeat;
 }
 
@@ -158,12 +164,12 @@ body {
 }
 
 #option .optionBox .optionInnerBox {
-    border: white solid 6px;
+    border: white solid 2px;
     position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
+    width: 80%;
+    height: 80%;
+    top: 0%;
+    left: 0%;
     color: white;
     z-index: 1;
     text-align: center;
