@@ -10,7 +10,7 @@ body {
     font-family: 'sitefont';
 }
 
-.divider {
+.shadowLine {
     width: 80%;
     height: 3px;
     background: rgb(202, 202, 202);
@@ -59,7 +59,7 @@ body {
     width: 30px;
     height: 30px;
     color: white;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 #navbar ul li i:hover {
@@ -106,7 +106,7 @@ body {
     height: 270px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-gap: 20px;
     padding: 20px;
     margin: 0 70px;
@@ -114,6 +114,8 @@ body {
 
 #option h2 {
     grid-column: span 3;
+    align-self: bottom;
+    font-size: 2em;
 }
 
 #option a {
@@ -138,14 +140,17 @@ body {
 
 #option div:nth-child(2) a .optionBox .optionOuterBox {
     background: url(img/options/1.jpg) center center/cover no-repeat;
+    background-position: -0px -190px;
 }
 
 #option div:nth-child(3) a .optionBox .optionOuterBox {
     background: url(img/options/2.jpg) center center/cover no-repeat;
+    background-position: -0px -300px;
 }
 
 #option div:nth-child(4) a .optionBox .optionOuterBox {
     background: url(img/options/3.jpg) center center/cover no-repeat;
+    background-position: -0px -100px;
 }
 
 #option .optionBox .optionOuterBox:hover,
@@ -158,7 +163,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     top: 0;
     left: 0;
 }
@@ -166,13 +171,22 @@ body {
 #option .optionBox .optionInnerBox {
     border: white solid 2px;
     position: absolute;
-    width: 80%;
+    width: 90%;
     height: 80%;
-    top: 0%;
-    left: 0%;
     color: white;
     z-index: 1;
     text-align: center;
+}
+
+#option .optionBox .optionInnerBox p {
+    margin-top: -0px;
+}
+
+#option .optionBox .optionInnerBox .divider {
+    height: 3px;
+    background: white;
+    width: 100px;
+    margin-top: -20px;
 }
 
 #offer p,
@@ -180,16 +194,32 @@ h2 {
     text-align: center;
 }
 
+#offer h2 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+#offer>p {
+    color: #A3A2A3;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #offer .offerContainer {
-    margin: 0 20px;
+    margin: 0 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    margin-top: 50px;
 }
 
 #offer .offerContainer .offerUnit {
     height: 300px;
     overflow: hidden;
+}
+
+#offer .offerContainer .offerUnit:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 #offer .offerContainer .offerUnit .imgBox {
@@ -198,32 +228,36 @@ h2 {
 }
 
 #offer .offerContainer .offerUnit .imgBox img {
+    object-fit: cover;
     width: 100%;
+    object-position: center;
 }
 
 #offer .offerContainer .offerUnit:nth-child(1) .imgBox img {
     position: relative;
-    top: -80px;
+    top: -60px;
 }
 
 #offer .offerContainer .offerUnit:nth-child(2) .imgBox img {
     position: relative;
-    top: -20px;
+    /*     top: 20px;
+ */
 }
 
 #offer .offerContainer .offerUnit:nth-child(3) .imgBox img {
     position: relative;
-    top: -140px;
+    top: -80px;
 }
 
 #offer .offerContainer .offerUnit:nth-child(4) .imgBox img {
     position: relative;
-    top: -70px;
+    top: -50px;
 }
 
 #offer .offerContainer .offerUnit:nth-child(5) .imgBox img {
     position: relative;
-    top: -60px;
+    /*     top: -60px;
+ */
 }
 
 #offer .offerContainer .offerUnit a,
