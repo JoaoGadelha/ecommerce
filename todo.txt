@@ -2,9 +2,10 @@ Make the site responsive
 
 Frontpage
 
-	implement carousel
+	implement transitions in carousel
 	add contact at the bottom of the footer
 	make navbar behave just like in the example video
 	fix: when window is resized, the #offer images become messed up
+	add shopping cart
 Advanced
 	implement database to feed products pages with images and products info

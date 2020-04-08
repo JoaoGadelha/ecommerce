@@ -41,3 +41,39 @@ function recenter() {
 
 recenter();
 window.addEventListener("resize", recenter);
+
+let nextA = document.getElementsByClassName('nextA');
+let banner = document.getElementById('banner');
+let index = 0;
+
+
+function changeImg(e, add) {
+    e.preventDefault();
+
+    index += add;
+
+    if (index > 2)
+        index = 0;
+    else if (index < 0) {
+        index = 2;
+    }
+
+    switch (index) {
+        case 0:
+            banner.style.background = 'url(\'img/banner/banner1.jpg\') center center/cover no-repeat';
+
+            break;
+        case 1:
+            banner.style.background = 'url(\'img/banner/banner2.jpg\') center center/cover no-repeat'
+
+            break;
+        case 2:
+            banner.style.background = 'url(\'img/banner/banner3.jpg\') center center/cover no-repeat';
+            banner.style.backgroundPosition = '0px 50px';
+
+            break;
+        default:
+            console.error(`An error has occurred: index does not have an acceptable value: ${index}.`);
+    }
+
+}

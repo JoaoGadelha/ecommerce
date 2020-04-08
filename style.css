@@ -27,7 +27,7 @@ body {
     align-items: center;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 200;
 }
 
 #navbar h2 {
@@ -88,18 +88,53 @@ body {
 
 #banner {
     height: 100vh;
-    background: url("img/banner/lady.jpg") no-repeat center center/cover;
-    background-position: 0 -200px;
+    background: url("img/banner/banner1.jpg") center center/cover no-repeat;
+    /* 
+    background-position: -200px -200px; */
+    overflow: hidden;
 }
 
 #banner::after {
     height: 100%;
     width: 100%;
     content: "";
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.1);
     top: 0;
     left: 0;
     position: absolute;
+}
+
+#banner .prevA,
+#banner .nextA {
+    font-size: 3em;
+    color: white;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    text-decoration: none;
+    border: zero;
+    border-radius: 50%;
+    height: 1.1em;
+    width: 1.1em;
+    text-align: center;
+    line-height: 1;
+    transition: ease 0.3s background-color;
+}
+
+#banner .prevA {
+    left: 0%;
+    margin-left: 10px;
+}
+
+#banner .nextA {
+    right: 0%;
+    margin-right: 10px;
+    border: solid rgba(0, 0, 0, 0) 1px;
+}
+
+#banner .prevA:hover,
+#banner .nextA:hover {
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #option {
@@ -129,7 +164,7 @@ body {
     height: 100%;
     width: 100%;
     transform: translateZ(0);
-    /*Causes faster transitions for optionOuterBox*/
+    /*Enables faster transitions for optionOuterBox*/
 }
 
 #option a .optionBox .optionOuterBox {
@@ -216,10 +251,13 @@ h2 {
 #offer .offerContainer .offerUnit {
     height: 300px;
     overflow: hidden;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+    border: solid 1px rgb(202, 202, 255);
 }
 
 #offer .offerContainer .offerUnit:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 10px rgb(110, 94, 255);
 }
 
 #offer .offerContainer .offerUnit .imgBox {
