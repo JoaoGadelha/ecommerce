@@ -24,9 +24,9 @@ function resize() {
 resize();
 window.addEventListener("resize", resize);
 
-
+/* 
 // Centers div.divider
-function recenter() {
+function reCenter() {
     let divider = document.getElementsByClassName('divider');
     let divW;
     let parW;
@@ -36,11 +36,14 @@ function recenter() {
         divider[i].style.position = "relative";
         divider[i].style.left = (parW - divW) / 2 + "px";
     }
-}
+} */
 
 
-recenter();
-window.addEventListener("resize", recenter);
+/* reCenter();
+window.addEventListener("resize", reCenter); */
+
+
+/* Main page carousel */
 
 let nextA = document.getElementsByClassName('nextA');
 let banner = document.getElementById('banner');

@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1b199bb414.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css">
+    <title>E-commerce Shop</title>
 </head>
 
 <body>
     <div id="navbar">
         <h2>Free shipping on All Orders Over $75!</h2>
-        <ul>
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li>
-                <a href=""><i class="fab fa-pinterest-p"></i></a>
-            </li>
-            <li>
-                <a href=""><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href=""><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-                <a href=""><i class="fab fa-youtube"></i></a>
-            </li>
-        </ul>
+        <div class="navbar_container">
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div id="banner">
         <a href="" class="prevA" onClick="changeImg(window.event,-1)">&#60</a>
@@ -34,7 +37,7 @@
     </div>
     <div id="option">
         <h2>Style is something we take seriously.</h2>
-        <div>
+        <div class='option_item'>
             <a href="https://google.com">
                 <div class="optionBox">
                     <div class="optionInnerBox">
@@ -48,7 +51,7 @@
                 </div>
             </a>
         </div>
-        <div>
+        <div class='option_item'>
             <a href="https://youtube.com">
                 <div class="optionBox">
                     <div class="optionInnerBox">
@@ -62,7 +65,7 @@
                 </div>
             </a>
         </div>
-        <div>
+        <div class='option_item'>
             <a href="https://uol.com.br">
                 <div class="optionBox">
                     <div class="optionInnerBox">
@@ -86,7 +89,10 @@
         <div class="offerContainer">
             <div class="offerUnit">
                 <div class="imgBox">
-                    <a href=""><img src="img/offers/1.jpg" alt=""></a>
+                    <a href="">
+                        <img src="img/offers/girl1.jpg" alt="" class="image1">
+                        <img src="img/offers/girl6.jpg" alt="" class="image2">
+                    </a>
                 </div>
                 <a href="">
                     <p>Power Puff</p>
@@ -95,7 +101,8 @@
             </div>
             <div class="offerUnit">
                 <div class="imgBox">
-                    <a href=""><img src="img/offers/2.jpg" alt=""></a>
+                    <a href=""><img src="img/offers/girl2.jpg" alt="" class="image1">
+                        <img src="img/offers/girl7.jpg" alt="" class="image2"></a>
                 </div>
                 <a href="">
                     <p>Power Puff</p>
@@ -104,7 +111,8 @@
             </div>
             <div class="offerUnit">
                 <div class="imgBox">
-                    <a href=""><img src="img/offers/3.jpg" alt=""></a>
+                    <a href=""><img src="img/offers/girl3.jpg" alt="" class="image1">
+                        <img src="img/offers/girl8.jpg" alt="" class="image2"></a>
                 </div>
                 <a href="">
                     <p>Power Puff</p>
@@ -113,7 +121,8 @@
             </div>
             <div class="offerUnit">
                 <div class="imgBox">
-                    <a href=""><img src="img/offers/4.jpg" alt=""></a>
+                    <a href=""><img src="img/offers/girl4.jpg" alt="" class="image1">
+                        <img src="img/offers/girl9.jpg" alt="" class="image2"></a>
                 </div>
                 <a href="">
                     <p>Power Puff</p>
@@ -122,7 +131,60 @@
             </div>
             <div class="offerUnit">
                 <div class="imgBox">
-                    <a href=""><img src="img/offers/5.jpg" alt=""></a>
+                    <a href=""><img src="img/offers/girl5.jpg" alt="" class="image1">
+                        <img src="img/offers/girl10.jpg" alt="" class="image2"></a>
+                </div>
+                <a href="">
+                    <p>Power Puff</p>
+                </a>
+                <p>Information</p>
+            </div>
+            <div class="offerUnit">
+                <div class="imgBox">
+                    <a href="">
+                        <img src="img/offers/girl6.jpg" alt="" class="image1">
+                        <img src="img/offers/girl1.jpg" alt="" class="image2">
+                    </a>
+                </div>
+                <a href="">
+                    <p>Power Puff</p>
+                </a>
+                <p>Information</p>
+            </div>
+            <div class="offerUnit">
+                <div class="imgBox">
+                    <a href=""><img src="img/offers/girl7.jpg" alt="" class="image1">
+                        <img src="img/offers/girl2.jpg" alt="" class="image2"></a>
+                </div>
+                <a href="">
+                    <p>Power Puff</p>
+                </a>
+                <p>Information</p>
+            </div>
+            <div class="offerUnit">
+                <div class="imgBox">
+                    <a href=""><img src="img/offers/girl8.jpg" alt="" class="image1">
+                        <img src="img/offers/girl3.jpg" alt="" class="image2"></a>
+                </div>
+                <a href="">
+                    <p>Power Puff</p>
+                </a>
+                <p>Information</p>
+            </div>
+            <div class="offerUnit">
+                <div class="imgBox">
+                    <a href=""><img src="img/offers/girl9.jpg" alt="" class="image1">
+                        <img src="img/offers/girl4.jpg" alt="" class="image2"></a>
+                </div>
+                <a href="">
+                    <p>Power Puff</p>
+                </a>
+                <p>Information</p>
+            </div>
+            <div class="offerUnit">
+                <div class="imgBox">
+                    <a href=""><img src="img/offers/girl10.jpg" alt="" class="image1">
+                        <img src="img/offers/girl5.jpg" alt="" class="image2"></a>
                 </div>
                 <a href="">
                     <p>Power Puff</p>
@@ -134,6 +196,12 @@
     <div id="tease">
         <h2>WANT TO SEE MORE? <span>SHOP NOW!</span></h2>
     </div>
+    <div id="tease_mobile">
+        <div>
+            <h4>WANT TO SEE MORE? </h4><span>SHOP NOW!</span>
+        </div>
+    </div>
+
     <div id="footer">
         <div class="logoContainer">
             <ul>
