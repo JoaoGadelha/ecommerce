@@ -64,7 +64,6 @@ function changeImg(e, add) {
     switch (index) {
         case 0:
             banner.style.background = 'url(\'img/banner/banner1.jpg\') center center/cover no-repeat';
-
             break;
         case 1:
             banner.style.background = 'url(\'img/banner/banner2.jpg\') center center/cover no-repeat'
@@ -72,7 +71,6 @@ function changeImg(e, add) {
             break;
         case 2:
             banner.style.background = 'url(\'img/banner/banner3.jpg\') center center/cover no-repeat';
-            banner.style.backgroundPosition = '0px 50px';
 
             break;
         default:

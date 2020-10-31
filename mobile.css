@@ -1,112 +1,116 @@
 /* Navbar ****************************************************************/
 
 #navbar {
-display:block;
-padding-top:10px;
+    display: block;
+    padding-top: 10px;
 }
 
 #navbar h2 {
-display:block;
-text-align:center;
-padding:0;
-margin:0;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
-#navbar ul, #navbar ul li{
-    margin:0;
-    padding:0;
+#navbar ul,
+#navbar ul li {
+    margin: 0;
+    padding: 0;
 }
 
 #navbar ul {
-    display:flex;
-    margin:0 auto;
+    display: flex;
+    margin: 0 auto;
 }
 
 #navbar .navbar_container {
-    display:grid;
-    justify-items:center;
+    display: grid;
+    justify-items: center;
 }
+
 
 /* Option ***************************************************************/
 
-#option  {
-    display:block;
-    height:500px;
-    width:80%;
-    margin:0;
-    padding:0;
-    margin:0 auto;
-    margin-top:50px;
+#option {
+    display: block;
+    height: 500px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 #option .optionBox .optionInnerBox .divider {
-    margin:0;
-    padding:0;
-    margin:0 auto;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
 }
 
-#option > div {
-    height:100px;
-    margin-bottom:20px;
+#option>div {
+    height: 100px;
+    margin-bottom: 20px;
 }
 
-#option .optionBox .optionInnerBox{
-    display:grid;
-    align-items:center;
+#option .optionBox .optionInnerBox {
+    display: grid;
+    align-items: center;
 }
 
-
-#option .optionBox .optionInnerBox > div *{
-    margin:0 auto;
-    height:100%;
-    text-align:center;
-    margin:0;
-    padding:0;
-    font-size:20px;
+#option .optionBox .optionInnerBox>div * {
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
+
 
 /* Offer ****************************************************************/
 
 #offer {
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 #offer .offerContainer {
     grid-template-columns: 1fr 1fr;
 }
 
+
 /* Tease ****************************************************************/
 
 #tease {
-    display:none;
+    display: none;
 }
 
-#tease_mobile{
-    display:grid;
-    align-items:center;
+#tease_mobile {
+    display: grid;
+    align-items: center;
     background: black;
     color: white;
     font-size: 30px;
     height: 140px;
-    text-align:center;
+    text-align: center;
 }
 
 #tease_mobile h4 {
-    margin:0;
+    margin: 0;
 }
 
 #tease_mobile span {
     color: #F56F09;
 }
 
+
 /* Footer ***********************************************************************/
 
 #footer .footerMenu {
-    display:grid;
-    justify-items:center;
+    display: grid;
+    justify-items: center;
 }
 
 #footer .footerMenu a:nth-child(1),
-#footer .footerMenu a:nth-child(2)  {
-    border:none;
+#footer .footerMenu a:nth-child(2) {
+    border: none;
 }
